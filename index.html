@@ -2,18 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="scss/main.scss" rel="stylesheet">
+<!--    <link rel="stylesheet" href="https://use.typekit.net/dzu5kmb.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Vocab</title>
+
 </head>
 <body>
 <header class="header">
     <div class="header__container container">
-        <span class="logo"></span>
-        <nav class="navbar">
-            <ul class="navbar__links">
-                <li class="navbar__element"><a href="#" class="navbar__link">My flashcards</a></li>
-                <li class="navbar__element"><a href="#" class="navbar__link">Settings</a></li>
-                <li class="navbar__element"><a href="#" class="navbar__link">Credits</a></li>
-            </ul>
+        <nav>
+            <label for="trigger">
+                <i class="fa-solid fa-bars"></i>
+                <input type="checkbox" id="trigger">
+            </label>
+            <div class="navbar">
+                <span class="logo"></span>
+                <ul class="navbar__links">
+                    <li class="navbar__element"><a href="#" class="navbar__link">My flashcards</a></li>
+                    <li class="navbar__element"><a href="#" class="navbar__link">Settings</a></li>
+                    <li class="navbar__element"><a href="#" class="navbar__link">Credits</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
 </header>

@@ -1,0 +1,13 @@
+@use "generic/normalize";
+@use "generic/reset";
+
+@use "variables/colors";
+@use "variables/fonts";
+
+@use "content/header";
+@use "content/opening";
+
+.container {
+  width: 450px;
+  margin: 0 auto;
+}

@@ -1,0 +1,36 @@
+@use "../variables/colors";
+@use "sass:math";
+
+.header {
+  background-color: colors.$color-primary;
+  box-shadow: colors.$shadow-light;
+  color: colors.$color-background;
+}
+
+.logo {
+  background-image: url("../assets/IA_Logo-web_blanc.png");
+  //height: 300px / 5;
+  height: calc(262px / 5);
+  width: 1133px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navbar__links {
+  display: flex;
+
+  .navbar__element {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      border-bottom: 3px solid rgba(colors.$color-background, 0.5);
+    }
+
+    &:active {
+      border-bottom: 3px solid rgba(colors.$color-background, 1);
+    }
+  }
+}

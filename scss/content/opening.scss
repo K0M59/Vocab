@@ -1,0 +1,7 @@
+@use "../variables/colors";
+@use "../variables/fonts";
+
+body {
+  background-color: colors.$color-secondary;
+  font-family: fonts.$font-primary;
+}
