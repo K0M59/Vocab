@@ -12,19 +12,16 @@
 <body>
 <header class="header">
     <div class="header__container container">
-        <nav>
-            <label for="trigger">
+        <nav class="nav">
+            <span class="logo"></span>
+            <label class="hamburger-menu" for="trigger-menu"-menu>
                 <i class="fa-solid fa-bars"></i>
-                <input type="checkbox" id="trigger">
             </label>
-            <div class="navbar">
-                <span class="logo"></span>
-                <ul class="navbar__links">
-                    <li class="navbar__element"><a href="#" class="navbar__link">My flashcards</a></li>
-                    <li class="navbar__element"><a href="#" class="navbar__link">Settings</a></li>
-                    <li class="navbar__element"><a href="#" class="navbar__link">Credits</a></li>
-                </ul>
-            </div>
+            <input type="checkbox" id="trigger-menu">
+            <ul class="navbar__links">
+                <li class="navbar__element"><a href="#" class="navbar__link">My flashcards</a></li>
+                <li class="navbar__element"><a href="#" class="navbar__link">Settings</a></li>
+            </ul>
         </nav>
     </div>
 </header>
@@ -37,14 +34,15 @@
         </div>
         <label for="answer">Type your answer here:</label>
         <input type="text" class="answer" id="answer">
-    </div>
-</main>
-<footer class="footer">
-    <div class="footer__container container">
         <div class="stats">
             <p class="counter__learnt">__ flashcards learnt</p>
             <p class="counter__left">__ to go</p>
         </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__container container">
+
     </div>
 </footer>
 </body>

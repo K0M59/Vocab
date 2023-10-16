@@ -1,7 +1,25 @@
 @use "../variables/colors";
 @use "../variables/fonts";
+@use "../variables/spaces";
 
 body {
-  background-color: colors.$color-secondary;
   font-family: fonts.$font-primary;
+}
+
+.main {
+  height: calc(100vh - spaces.$height-header);
+  background-color: colors.$color-background;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../assets/logo_IA_blanc_vect.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: invert(5%);
+  }
 }
