@@ -27,13 +27,17 @@
 </header>
 <main class="main">
     <div class="main__container container">
-        <h1 class="set__title"></h1>
-        <div class="flashcard">
-            <p class="flashcard__recto"></p>
-            <p class="flashcard__verso"></p>
+        <h1 class="set__title">Colors</h1>
+        <input type="checkbox" id="flashcard__flip-trigger">
+        <label for="flashcard__flip-trigger" class="flashcard">
+            <p class="flashcard__front">Color</p>
+            <p class="flashcard__back">Couleur</p>
+        </label>
+        <div class="answer__box">
+            <label for="answer">Type your answer below:</label>
+            <input type="text" class="answer" id="answer">
         </div>
-        <label for="answer">Type your answer here:</label>
-        <input type="text" class="answer" id="answer">
+
         <div class="stats">
             <p class="counter__learnt">__ flashcards learnt</p>
             <p class="counter__left">__ to go</p>
